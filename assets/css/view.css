@@ -46,3 +46,27 @@ body{
     font-family: Orbitron;
     text-align: right;
 }
+
+#opcoes{
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.opcao1{
+    cursor: pointer;
+}
+
+#opcoes-mostrar{
+    background-color: white;
+    opacity: 70%;
+    width: 50%;
+    position: absolute;
+    z-index: 1000000000;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}

@@ -11,6 +11,7 @@ if ( session_status() !== PHP_SESSION_ACTIVE )
     <meta charset="utf-8">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/view.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>OpenLayers example</title>
   </head>
   <body>

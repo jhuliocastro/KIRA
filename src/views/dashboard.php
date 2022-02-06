@@ -2,6 +2,9 @@
 $this->layout("_view", $this->data);?>
 
 <div class="container-fluid">
+    <div id="opcoes-mostrar">
+dfdf
+    </div>
     <div class="row">
         <div class="col">
             <div id="MyClockDisplay" class="clock" onload="showTime()"></div> 
@@ -16,6 +19,11 @@ $this->layout("_view", $this->data);?>
         </div>
         <div class="col">
             <img class="img float-end" id="imagem-tempo" src="/assets/img/<?= $info["imagem"] ?>.png">
+        </div>
+    </div>
+    <div id="opcoes">
+        <div class="opcao1">
+            <img src="/assets/img/opcoes.png">
         </div>
     </div>
 
@@ -105,4 +113,15 @@ $this->layout("_view", $this->data);?>
 }
 
 showTime();
+
+$("#opcoes").click(function(){
+    $("#opcoes-mostrar").toggle("slow", function(){
+
+    });
+});
+
+$(document).ready(function(){
+    $("#opcoes-mostrar").hide();
+});
+
 </script>
