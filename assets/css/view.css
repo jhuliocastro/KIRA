@@ -39,3 +39,10 @@ body{
     font-size: 60px;
     font-family: Orbitron;
 }
+
+.data {
+    color: white;
+    font-size: 60px;
+    font-family: Orbitron;
+    text-align: right;
+}

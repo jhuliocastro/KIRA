@@ -13,7 +13,7 @@ class Dashboard extends Controller {
                 "dia_semana" => $resultado["forecast"][0]["weekday"],
                 "data" => $resultado["forecast"][0]["date"]
         ];
-        //print_r($this->clima());   
+        //var_dump($info); 
         parent::render("dashboard", [
             "info" => $info
         ]);     

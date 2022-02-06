@@ -3,7 +3,12 @@ $this->layout("_view", $this->data);?>
 
 <div class="container-fluid">
     <div class="row">
-        <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+        <div class="col">
+            <div id="MyClockDisplay" class="clock" onload="showTime()"></div> 
+        </div>
+        <div class="col data">
+            <?= $info["dia_semana"] ?>, <?= $info["data"] ?>
+        </div>
     </div>
     <div class="row div-info">        
         <div class="col div-temperatura">
