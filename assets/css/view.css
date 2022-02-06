@@ -1,0 +1,41 @@
+body{
+    margin:0;
+    height: 100%;
+    background-image: url("/assets/img/background.jpg");
+    background-size: 100%;
+}
+
+.div-tempo{
+    background-color: #4169E1;
+    width: 100%;
+    height: 100px;
+    min-height: 100px;
+    position: absolute;
+    bottom: 0;
+    opacity: 70%;
+}
+
+.dias-tempo{
+    width: 14.28%;
+}
+
+.div-info{
+    width: 250px;
+    color: white;
+    font-size: 40px;
+    font-family: Orbitron;
+}
+
+.div-temperatura{
+    text-align: right;
+}
+
+#imagem-tempo{
+    width: 140px;
+}
+
+.clock {
+    color: white;
+    font-size: 60px;
+    font-family: Orbitron;
+}
