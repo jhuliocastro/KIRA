@@ -1,5 +1,4 @@
 import pyttsx3
-import sys
 
 engine = pyttsx3.init() # object creation
 

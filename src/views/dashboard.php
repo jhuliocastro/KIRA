@@ -130,7 +130,8 @@ $(document).ready(function(){
 $("#luzQuarto").click(function(){
     $.ajax({
         type: "POST",
-        url: "/python/sintetizador",
+        url: "http://localhost/var/www/html/python/sintetizador.py",
+        datatype: "html",
         data: { 
             frase: "luz quarto"
         }
