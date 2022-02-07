@@ -11,4 +11,9 @@ class Python{
         $run = shell_exec("python3 /var/www/html/python/desligaLuzQuarto.py");
         echo $run;
     }
+
+    public function luzQuartoLiga(){
+        $run = shell_exec("python3 /var/www/html/python/ligaLuzQuarto.py");
+        echo $run;
+    }
 }

@@ -134,17 +134,26 @@ $("#luzQuarto").click(function(){
     if(luzQuarto === 0){
         $('.opcao').css("border-bottom", "8px solid green");
         luzQuarto = 1;
+        $.ajax({
+            type: "POST",
+            url: "/python/luzQuarto/liga", 
+            }).done(function(retorno) {
+                console.log(retorno);
+            }).fail(function (jqXHR, textStatus, errorThrown) {
+                console.log(textStatus);
+                console.log(errorThrown);
+        });
     }else{
         $('.opcao').css("border-bottom", "8px solid red");
         luzQuarto = 0;
         $.ajax({
-        type: "POST",
-        url: "/python/luzQuarto/desliga", 
-        }).done(function(retorno) {
-            console.log(retorno);
-        }).fail(function (jqXHR, textStatus, errorThrown) {
-            console.log(textStatus);
-            console.log(errorThrown);
+            type: "POST",
+            url: "/python/luzQuarto/desliga", 
+            }).done(function(retorno) {
+                console.log(retorno);
+            }).fail(function (jqXHR, textStatus, errorThrown) {
+                console.log(textStatus);
+                console.log(errorThrown);
         });
     }
     

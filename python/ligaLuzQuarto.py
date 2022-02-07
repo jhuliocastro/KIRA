@@ -7,8 +7,8 @@ GPIO.setwarnings(False)
 GPIO.setup(3, GPIO.OUT) 
 rele_quarto = 3 
 
-def desligar(): 
-    GPIO.output(rele_quarto, GPIO.LOW) 
+def ligar(): 
+    GPIO.output(rele_quarto, GPIO.HIGH) 
 
 if __name__ == "__main__": 
-    desligar()
+    ligar()
