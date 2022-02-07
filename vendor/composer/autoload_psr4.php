@@ -10,5 +10,4 @@ return array(
     'League\\Plates\\' => array($vendorDir . '/league/plates/src'),
     'Controllers\\' => array($baseDir . '/src/controller'),
     'CoffeeCode\\Router\\' => array($vendorDir . '/coffeecode/router/src'),
-    'AdinanCenci\\Climatempo\\' => array($vendorDir . '/adinan-cenci/climatempo-api/src'),
 );

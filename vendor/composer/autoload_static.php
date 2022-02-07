@@ -24,10 +24,6 @@ class ComposerStaticInit937baad49e4485729282dfccb8a8c589
             'Controllers\\' => 12,
             'CoffeeCode\\Router\\' => 18,
         ),
-        'A' => 
-        array (
-            'AdinanCenci\\Climatempo\\' => 23,
-        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -46,10 +42,6 @@ class ComposerStaticInit937baad49e4485729282dfccb8a8c589
         'CoffeeCode\\Router\\' => 
         array (
             0 => __DIR__ . '/..' . '/coffeecode/router/src',
-        ),
-        'AdinanCenci\\Climatempo\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/adinan-cenci/climatempo-api/src',
         ),
     );
 
