@@ -10,4 +10,7 @@ $router->namespace("Controllers");
 
 $router->get("/", "Dashboard:home");
 
+$router->group("python");
+$router->post("/sintetizador", "Python:sintetizador");
+
 $router->dispatch();

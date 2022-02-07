@@ -3,7 +3,7 @@ $this->layout("_view", $this->data);?>
 
 <div class="container-fluid">
     <div id="opcoes-mostrar">
-        <div class="opcao">
+        <div class="opcao" id="luzQuarto">
             <img src="/assets/img/luz.png">
             <span>LUZ QUARTO</span>
         </div>
@@ -125,6 +125,18 @@ $("#opcoes").click(function(){
 
 $(document).ready(function(){
     $("#opcoes-mostrar").hide();
+});
+
+$("#luzQuarto").click(function(){
+    $.ajax({
+        type: "POST",
+        url: "/python/sintetizador",
+        data: { 
+            frase: "luz quarto"
+        }
+    }).done(function( o ) {
+        console.log(o);
+    });
 });
 
 </script>
