@@ -12,5 +12,6 @@ $router->get("/", "Dashboard:home");
 
 $router->group("python");
 $router->post("/sintetizador", "Python:sintetizador");
+$router->post("/luzQuarto/desliga", "Python:luzQuartoDesliga");
 
 $router->dispatch();

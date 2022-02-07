@@ -18,13 +18,13 @@ voices = engine.getProperty('voices')       #getting details of current voice
 #engine.setProperty('voice', voices[0].id)  #changing index, changes voices. o for male
 engine.setProperty('voice', 'brazil')   #changing index, changes voices. 1 for female
 
-engine.say(sys.argv[1])
+engine.say('teste')
 engine.runAndWait()
 engine.stop()
 
 """Saving Voice to a file"""
 # On linux make sure that 'espeak' and 'ffmpeg' are installed
-engine.save_to_file(sys.argv[1], 'test.mp3')
+engine.save_to_file('teste', 'test.mp3')
 engine.runAndWait()
 
 for voice in voices:

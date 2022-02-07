@@ -124,20 +124,30 @@ $("#opcoes").click(function(){
 });
 
 $(document).ready(function(){
+    
     $("#opcoes-mostrar").hide();
 });
 
+var luzQuarto = 0;
+
 $("#luzQuarto").click(function(){
-    $.ajax({
+    if(luzQuarto === 0){
+        $('.opcao').css("border-bottom", "8px solid green");
+        luzQuarto = 1;
+    }else{
+        $('.opcao').css("border-bottom", "8px solid red");
+        luzQuarto = 0;
+        $.ajax({
         type: "POST",
-        url: "http://localhost/var/www/html/python/sintetizador.py",
-        datatype: "html",
-        data: { 
-            frase: "luz quarto"
-        }
-    }).done(function( o ) {
-        console.log(o);
-    });
+        url: "/python/luzQuarto/desliga", 
+        }).done(function(retorno) {
+            console.log(retorno);
+        }).fail(function (jqXHR, textStatus, errorThrown) {
+            console.log(textStatus);
+            console.log(errorThrown);
+        });
+    }
+    
 });
 
 </script>

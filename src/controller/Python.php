@@ -3,9 +3,12 @@ namespace Controllers;
 
 class Python{
     public function sintetizador(){
-        $texto = $_POST["frase"];
-        $caminho = __DIR__."/../../python/sintetizador.py";
-        $run = shell_exec("python /var/www/html/python/sintetizador.py");
+        $run = shell_exec("python3 /var/www/html/python/sintetizador.py");
+        echo $run;
+    }
+
+    public function luzQuartoDesliga(){
+        $run = shell_exec("python3 /var/www/html/python/desligaLuzQuarto.py");
         echo $run;
     }
 }

@@ -2,6 +2,9 @@
 namespace Controllers;
 
 class Dashboard extends Controller {
+
+    private $luzQuarto = 0;
+
     public function home(){        
         $resultado = $this->clima()["results"];
         $info = [
