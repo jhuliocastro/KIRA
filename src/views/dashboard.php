@@ -3,7 +3,10 @@ $this->layout("_view", $this->data);?>
 
 <div class="container-fluid">
     <div id="opcoes-mostrar">
-dfdf
+        <div class="opcao">
+            <img src="/assets/img/luz.png">
+            <span>LUZ QUARTO</span>
+        </div>
     </div>
     <div class="row">
         <div class="col">
