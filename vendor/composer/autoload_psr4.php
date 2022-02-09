@@ -10,4 +10,5 @@ return array(
     'League\\Plates\\' => array($vendorDir . '/league/plates/src'),
     'Controllers\\' => array($baseDir . '/src/controller'),
     'CoffeeCode\\Router\\' => array($vendorDir . '/coffeecode/router/src'),
+    'Alertas\\' => array($vendorDir . '/jhuliocastro/alertas/src'),
 );

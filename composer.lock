@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "61b533fe8cdb05eb51438f06b1914694",
+    "content-hash": "d6327be32eca5c185b6a878a0f956e77",
     "packages": [
         {
             "name": "coffeecode/router",
@@ -54,6 +54,45 @@
                 "source": "https://github.com/robsonvleite/router/tree/1.0.8"
             },
             "time": "2021-03-21T18:45:16+00:00"
+        },
+        {
+            "name": "jhuliocastro/alertas",
+            "version": "v2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jhuliocastro/sweet-alert.git",
+                "reference": "0571dca6346d66c9940233f2b7a80e1099dafefe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jhuliocastro/sweet-alert/zipball/0571dca6346d66c9940233f2b7a80e1099dafefe",
+                "reference": "0571dca6346d66c9940233f2b7a80e1099dafefe",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Alertas\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jhúlio Castro",
+                    "email": "jhuliocastro@hotmail.com"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/jhuliocastro/sweet-alert/issues",
+                "source": "https://github.com/jhuliocastro/sweet-alert/tree/v2.1.0"
+            },
+            "time": "2021-09-26T18:31:08+00:00"
         },
         {
             "name": "league/plates",
@@ -178,5 +217,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.2.0"
 }

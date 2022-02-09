@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'af767448b0509607f0727462f803de8f490b794f',
+        'reference' => '350cfa7e12c374046be9a95f0a3f7c22c0c68d78',
         'name' => '__root__',
         'dev' => true,
     ),
@@ -16,7 +16,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'af767448b0509607f0727462f803de8f490b794f',
+            'reference' => '350cfa7e12c374046be9a95f0a3f7c22c0c68d78',
             'dev_requirement' => false,
         ),
         'coffeecode/router' => array(
@@ -26,6 +26,15 @@
             'install_path' => __DIR__ . '/../coffeecode/router',
             'aliases' => array(),
             'reference' => '29f73e12351a116e9bbb3f695595777a09e18077',
+            'dev_requirement' => false,
+        ),
+        'jhuliocastro/alertas' => array(
+            'pretty_version' => 'v2.1.0',
+            'version' => '2.1.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../jhuliocastro/alertas',
+            'aliases' => array(),
+            'reference' => '0571dca6346d66c9940233f2b7a80e1099dafefe',
             'dev_requirement' => false,
         ),
         'league/plates' => array(

@@ -1,6 +1,8 @@
 <?php
 namespace Controllers;
 
+use Alertas\Alert;
+
 class Dashboard extends Controller {
 
     private $luzQuarto = 0;
@@ -20,6 +22,10 @@ class Dashboard extends Controller {
         parent::render("dashboard", [
             "info" => $info
         ]);     
+    }
+
+    public function erroStatusLuzQuarto(){
+        Alert::error("Não foi possível identificar status da luz do quarto!", "Verifique as conexões antes de continuar.", "/");
     }
 
     private function clima(){

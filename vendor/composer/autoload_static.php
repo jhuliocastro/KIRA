@@ -24,6 +24,10 @@ class ComposerStaticInit937baad49e4485729282dfccb8a8c589
             'Controllers\\' => 12,
             'CoffeeCode\\Router\\' => 18,
         ),
+        'A' => 
+        array (
+            'Alertas\\' => 8,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -42,6 +46,10 @@ class ComposerStaticInit937baad49e4485729282dfccb8a8c589
         'CoffeeCode\\Router\\' => 
         array (
             0 => __DIR__ . '/..' . '/coffeecode/router/src',
+        ),
+        'Alertas\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/jhuliocastro/alertas/src',
         ),
     );
 

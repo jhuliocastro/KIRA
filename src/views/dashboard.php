@@ -123,40 +123,32 @@ $("#opcoes").click(function(){
     });
 });
 
+function luzQuarto(){
+    $.ajax({
+        type: "POST",
+        url: "/status/luzQuarto", 
+        }).done(function(retorno) {
+            console.log(retorno);
+            if(retorno == "0"){
+                $('.opcao').css("border-bottom", "8px solid green");
+            }else if(retorno == "1"){
+                $('.opcao').css("border-bottom", "8px solid red");
+            }
+        }).fail(function (jqXHR, textStatus, errorThrown) {
+            window.location.href = "/alerta/erro/status/quarto";
+    });
+}
+
 $(document).ready(function(){
     
     $("#opcoes-mostrar").hide();
+
+    luzQuarto();
+
 });
 
-var luzQuarto = 0;
-
 $("#luzQuarto").click(function(){
-    if(luzQuarto === 0){
-        $('.opcao').css("border-bottom", "8px solid green");
-        luzQuarto = 1;
-        $.ajax({
-            type: "POST",
-            url: "/python/luzQuarto/liga", 
-            }).done(function(retorno) {
-                console.log(retorno);
-            }).fail(function (jqXHR, textStatus, errorThrown) {
-                console.log(textStatus);
-                console.log(errorThrown);
-        });
-    }else{
-        $('.opcao').css("border-bottom", "8px solid red");
-        luzQuarto = 0;
-        $.ajax({
-            type: "POST",
-            url: "/python/luzQuarto/desliga", 
-            }).done(function(retorno) {
-                console.log(retorno);
-            }).fail(function (jqXHR, textStatus, errorThrown) {
-                console.log(textStatus);
-                console.log(errorThrown);
-        });
-    }
-    
+    window.location.href = "/comandos/luzQuarto";
 });
 
 </script>
